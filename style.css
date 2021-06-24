@@ -99,6 +99,7 @@
 
 .ex-10-icon {
     font-size: 60px;
+    animation: rotate 0.5s linear infinite;
 }
 
 @keyframes rotate {
@@ -113,13 +114,74 @@
 }
 
 .ex-11-icon:hover {
-    animation: rotate2 cubic-bezier(0.93,-0.03, 1, 0.99) 1s;
+    animation: rotate2 cubic-bezier(0.93,-0.03, 1, 0.99) 2s;
 }
 
 @keyframes rotate2 {
     0% {transform: rotate(0);}
     75% {transform: rotate(320deg);}
+
 }
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: white-t 2s linear;
+}
+
+@keyframes white-t {
+    0%  {left: 10%;}
+    25% {left: 50%;}
+    50% {left: 10%;}
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: bottom-w 2s linear;
+}
+
+@keyframes bottom-w {
+    0%  {right: 10%;}
+    25% {right: 50%;}
+    50% {right: 10%;}
+}
+
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: left-t 2s linear;
+}
+
+@keyframes left-t {
+    0%  {left: 10%;}
+    15% {left: 90%;}
+    20% {left: 90%;
+        top: 10%;}
+    30% {left: 90%;
+         top: 90%;}
+    45% {top: 90%;
+         left:-10%;}
+    60% {top:90%;
+         left:-20%;}
+    80% {top:-10%;
+        left:-20%;}  
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: right-t 2s linear;
+}
+
+@keyframes right-t {
+    0%  {right: 10%;}
+    15% {right: 80%;}
+    20% {right: 90%;
+        bottom: 10%;}
+    30% {right: 90%;
+         bottom: 90%;}
+    45% {bottom: 90%;
+         right:-10%;}
+    60% {bottom:90%;
+         right:-20%;}
+    80% {bottom:-10%;
+        right:-20%;}  
+}
+
 
 .ex-12-button, .ex-13-button {
     position: relative;
