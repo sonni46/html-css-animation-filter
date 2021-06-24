@@ -140,7 +140,7 @@
 @keyframes bottom-w {
     0%  {right: 10%;}
     25% {right: 50%;}
-    50% {right: 10%;}
+    50% {right: 20%;}
 }
 
 
@@ -181,7 +181,6 @@
     80% {bottom:-10%;
         right:-20%;}  
 }
-
 
 .ex-12-button, .ex-13-button {
     position: relative;
